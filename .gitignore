@@ -132,3 +132,7 @@ lib-cov
 *.out
 *.pid
 
+.next
+.nyc_output
+.next/*
+.next/cache

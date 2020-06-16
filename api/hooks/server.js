@@ -22,8 +22,7 @@ module.exports = (sails) => {
       }
 
       // Create special route to handle Next.js SSR
-      console.log('sails server ',sails.config);
-      console.log('sails api ', api);
+
       sails.on('router:after', () => {
         sails.router.bind(toRegex(api.prefix), {
           skipAssets: false,
